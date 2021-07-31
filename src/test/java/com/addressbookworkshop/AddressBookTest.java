@@ -8,27 +8,27 @@ public class AddressBookTest {
 	@Test
 	public void firstNameTrueTest() {
 		AddressBook FirstName = new AddressBook();
-		boolean result = FirstName.nameValidation("Rekha");
+		boolean result = FirstName.nameValidation("Stuti");
 		assertEquals(true, result);
 	}
 
 	@Test
 	public void firstNameSadTest() {
-		boolean result = AddressBook.nameValidation("re");
+		boolean result = AddressBook.nameValidation("st");
 		assertEquals(false, result);
 	}
 
 	@Test
 	public void lastNameTest() {
 		AddressBook LastName = new AddressBook();
-		boolean result = LastName.nameValidation("Patil");
+		boolean result = LastName.nameValidation("Saurya");
 		assertEquals(true, result);
 	}
 
 	@Test
 	public void lastNameSadTest() {
 		AddressBook LastName = new AddressBook();
-		boolean result = LastName.nameValidation("pa");
+		boolean result = LastName.nameValidation("sa");
 		assertEquals(false, result);
 	}
 
